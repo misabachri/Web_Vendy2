@@ -1,0 +1,14 @@
+# llms.txt
+
+project: Webinář péče o dětské zuby
+language: cs-CZ
+canonical: https://www.zubybezkazu.cz/
+
+pages:
+- / : Landing page s informacemi o webináři, FAQ a CTA
+- /obchodni-podminky.html : Obchodní podmínky
+- /zasady-cookies.html : Zásady cookies
+
+notes:
+- Texty v hlavních sekcích jsou určené pro rodiče malých dětí.
+- CTA má vést na přihlášení do webináře.
