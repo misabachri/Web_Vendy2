@@ -139,7 +139,7 @@ Možná si říkáš:
 „Ale nikdo mi pořádně neřekl, jak na to.“
 
 Jako dentální hygienistka vidím každý den děti, které už mají problémy.
-Jako máma ale vím, že rodiče nedělají chyby schválně — jen často nemají jasné informace.
+Jako máma ale vím, že rodiče nedělají chyby schválně – jen často nemají jasné informace.
 
 Proto jsem vytvořila krátký online webinář pro maminky, které chtějí mít klid v hlavě a jistotu v péči o zuby svých dětí.
 
@@ -175,7 +175,7 @@ Tlačítko: Chci vědět, jak na zuby svého dítěte
 •  jak si čištění zubů zpříjemnit
 •  jaký vliv má výživa a genetika
 
-Získáš jasný plán péče o zuby svého dítěte — bez chaosu a bez dohadů.
+Získáš jasný plán péče o zuby svého dítěte – bez chaosu a bez dohadů.
 
 Tlačítko: 👉 *Chci mít v péči o zuby jasno*
 
@@ -213,7 +213,7 @@ Proto předávám informace tak, aby byly srozumitelné, proveditelné a fungova
 # Časté otázky rodičů
 
 *Musím začít čistit hned od prvního zubu?*
-Ano — právě začátek rozhoduje o budoucím zdraví zubů.
+Ano – právě začátek rozhoduje o budoucím zdraví zubů.
 
 *Co když si dítě nechce nechat čistit zuby?*
 Ukážu ti postupy, které pomáhají snížit odpor a nastavit rutinu.
