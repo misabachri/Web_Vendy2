@@ -211,18 +211,21 @@ p {
 }
 
 .wave {
+  --wave-base: #ffffff;
+  --wave-seam: #ffffff;
+  --wave-dot-1: rgba(255, 165, 183, 0.65);
+  --wave-dot-2: rgba(88, 208, 219, 0.55);
+  --wave-dot-3: rgba(253, 206, 215, 0.75);
+  --wave-dot-4: rgba(88, 208, 219, 0.5);
+  --wave-dot-5: rgba(255, 165, 183, 0.6);
   position: relative;
+  display: block;
+  line-height: 0;
   width: 100%;
   height: 72px;
-  background:
-    radial-gradient(52px 20px at 26px -5px, transparent 64%, #ffffff 65%) repeat-x,
-    radial-gradient(46px 16px at 76px -7px, transparent 64%, rgba(88, 208, 219, 0.32) 65%) repeat-x;
-  background-size:
-    104px 50px,
-    104px 42px;
-  background-position:
-    0 20px,
-    0 32px;
+  background: radial-gradient(52px 20px at 26px -5px, transparent 64%, var(--wave-base) 65%) repeat-x;
+  background-size: 104px 50px;
+  background-position: 0 20px;
 }
 
 .wave::before,
@@ -238,38 +241,23 @@ p {
   height: 14px;
   left: 0;
   top: 8px;
-  background: radial-gradient(circle at 12% 50%, rgba(255, 165, 183, 0.65) 0 6px, transparent 7px),
-    radial-gradient(circle at 32% 50%, rgba(88, 208, 219, 0.55) 0 5px, transparent 6px),
-    radial-gradient(circle at 54% 50%, rgba(253, 206, 215, 0.75) 0 6px, transparent 7px),
-    radial-gradient(circle at 74% 50%, rgba(88, 208, 219, 0.5) 0 5px, transparent 6px),
-    radial-gradient(circle at 92% 50%, rgba(255, 165, 183, 0.6) 0 6px, transparent 7px);
+  background: radial-gradient(circle at 12% 50%, var(--wave-dot-1) 0 6px, transparent 7px),
+    radial-gradient(circle at 32% 50%, var(--wave-dot-2) 0 5px, transparent 6px),
+    radial-gradient(circle at 54% 50%, var(--wave-dot-3) 0 6px, transparent 7px),
+    radial-gradient(circle at 74% 50%, var(--wave-dot-4) 0 5px, transparent 6px),
+    radial-gradient(circle at 92% 50%, var(--wave-dot-5) 0 6px, transparent 7px);
 }
 
 .wave::after {
-  width: 100%;
-  height: 8px;
+  content: "";
+  position: absolute;
   left: 0;
-  bottom: 4px;
-  background: linear-gradient(90deg, rgba(255, 165, 183, 0.25), rgba(88, 208, 219, 0.3), rgba(253, 206, 215, 0.25));
+  right: 0;
+  bottom: 0;
+  height: 3px;
+  background: var(--wave-seam);
 }
 
-.section-divider {
-  width: min(92vw, var(--maxw));
-  height: 44px;
-  margin: 0 auto calc(var(--space-3) * -1);
-  border-radius: 999px;
-  background:
-    radial-gradient(24px 16px at 8% 65%, rgba(88, 208, 219, 0.3), transparent 75%),
-    radial-gradient(24px 16px at 22% 35%, rgba(255, 165, 183, 0.3), transparent 75%),
-    radial-gradient(26px 17px at 38% 66%, rgba(253, 206, 215, 0.4), transparent 76%),
-    radial-gradient(23px 15px at 54% 36%, rgba(88, 208, 219, 0.3), transparent 76%),
-    radial-gradient(24px 16px at 70% 64%, rgba(255, 165, 183, 0.32), transparent 76%),
-    radial-gradient(25px 16px at 86% 36%, rgba(253, 206, 215, 0.4), transparent 76%),
-    linear-gradient(90deg, rgba(88, 208, 219, 0.16), rgba(255, 165, 183, 0.2), rgba(88, 208, 219, 0.16));
-  box-shadow:
-    inset 0 1px 0 rgba(255, 255, 255, 0.6),
-    0 8px 18px rgba(80, 52, 58, 0.08);
-}
 
 .section {
   padding: var(--space-6) 0;
@@ -309,15 +297,15 @@ p {
   background: radial-gradient(circle, rgba(253, 206, 215, 0.36) 0%, rgba(253, 206, 215, 0) 70%);
 }
 
-.soft-bg > .container {
+.soft-bg>.container {
   position: relative;
   z-index: 1;
 }
 
 .video-bridge {
-  margin-top: calc(var(--space-2) * -1);
+  margin-top: 0;
   background: transparent;
-  padding-top: 0;
+  padding-top: var(--space-2);
 }
 
 .video-placeholder {
@@ -348,7 +336,7 @@ p {
   text-align: center;
 }
 
-#pro-koho > .container > p {
+#pro-koho>.container>p {
   text-align: center;
   margin-inline: auto;
 }
@@ -694,19 +682,7 @@ p {
   background: linear-gradient(160deg, #4a4448 0%, #50343a 100%);
   color: #fff;
   padding: var(--space-5) 0 var(--space-3);
-  margin-top: var(--space-6);
-}
-
-.site-footer::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: -56px;
-  height: 56px;
-  background: radial-gradient(60px 24px at 24px -8px, transparent 62%, #fff 63%) repeat-x;
-  background-size: 108px 56px;
-  pointer-events: none;
+  margin-top: 0;
 }
 
 .footer-grid {
@@ -778,7 +754,7 @@ p {
 
 .footer-bottom {
   margin-top: var(--space-4);
-  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  border-top: 0;
   padding-top: var(--space-2);
   display: flex;
   align-items: center;
@@ -856,6 +832,7 @@ p {
     opacity: 0;
     transform: translate(-50%, 16px);
   }
+
   to {
     opacity: 1;
     transform: translate(-50%, 0);
@@ -965,6 +942,7 @@ p {
 }
 
 @media (prefers-reduced-motion: reduce) {
+
   *,
   *::before,
   *::after {
