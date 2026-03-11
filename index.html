@@ -23,7 +23,7 @@
   <meta name="twitter:image" content="https://www.zubybezkazu.cz/Obrazky/detskezuby9.jpg">
 
   <meta http-equiv="Content-Security-Policy"
-    content="default-src 'self'; img-src 'self' data:; script-src 'self' 'unsafe-inline'; style-src 'self' https://fonts.googleapis.com https://cdn.jsdelivr.net; font-src 'self' https://fonts.gstatic.com; connect-src 'self'; frame-src 'self'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests">
+    content="default-src 'self'; img-src 'self' data: https://*.simpleshop.cz; script-src 'self' 'unsafe-inline' https://form.simpleshop.cz https://*.simpleshop.cz; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdn.jsdelivr.net https://form.simpleshop.cz https://*.simpleshop.cz; font-src 'self' https://fonts.gstatic.com; connect-src 'self' https://*.simpleshop.cz; frame-src 'self' https://*.simpleshop.cz; base-uri 'self'; form-action 'self' https://*.simpleshop.cz; upgrade-insecure-requests">
   <meta http-equiv="X-Content-Type-Options" content="nosniff">
   <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
 
@@ -119,19 +119,27 @@
             <p class="eyebrow">online webinář pro maminky</p>
             <h1>Zuby bez kazu začínají u mámy, která ví, jak na to</h1>
             <p>Možná si říkáš:</p>
-            <p>„Snad to dělám dobře…“<br>„Nechci, aby moje dítě řešilo kaz tak brzy…“<br>„Ale nikdo mi pořádně neřekl,
-              jak na to.“</p>
-            <p>Jako dentální hygienistka vidím každý den děti, které už mají problémy.<br>Jako máma ale vím, že rodiče
-              nedělají chyby schválně – jen často nemají jasné informace.</p>
-            <p>Proto jsem vytvořila krátký online webinář pro maminky, které chtějí mít klid v hlavě a jistotu v péči o
-              zuby svých dětí.</p>
+            <p>„Snad to dělám dobře…“<br>„Nechci, aby moje dítě mělo kaz…“<br>„Ale nikdo mi pořádně neřekl, jak na
+              to.“</p>
+            <p>Jako dentální hygienistka vidím každý den v ordinaci i okolo sebe děti, které už mají problémy.</p>
+            <p>Jako máma ale vím, že rodiče nedělají chyby schválně – jen často nemají jasné informace.</p>
+            <div class="hero-event-grid" aria-label="Informace o termínu a formě webináře">
+              <div class="hero-event-item">
+                <p class="hero-event-label">KDY</p>
+                <p class="hero-event-value">Středa 29.4 2026 od 20:15</p>
+              </div>
+              <div class="hero-event-item">
+                <p class="hero-event-label">KDE</p>
+                <p class="hero-event-value">online tady</p>
+              </div>
+            </div>
             <div class="cta-row">
-              <a class="btn btn-primary" href="#pridej-se">Přihlas se na webinář a získej jistotu</a>
-              <a class="btn btn-ghost" href="#video">Přehrát ukázku</a>
+              <a class="btn btn-primary" href="#pridej-se">Chci se přihlásit</a>
+              <a class="btn btn-ghost" href="#pro-koho">O čem bude webinář</a>
             </div>
           </div>
           <figure class="hero-media reveal">
-            <img src="Obrazky/detskezuby9.jpg" alt="Maminka pečuje o zuby dítěte" width="900" height="1200">
+            <img src="Obrazky/detskezuby2.jpg" alt="Maminka pečuje o zuby dítěte" width="900" height="1200">
           </figure>
         </div>
         <div class="wave" aria-hidden="true"></div>
@@ -152,24 +160,24 @@
     <section id="pro-koho" class="section soft-bg">
       <div class="container reveal">
         <h2>Pro koho je webinář</h2>
-        <p>Pro maminky dětí od narození do 5 let, které:</p>
+        <p>Pro maminky dětí od narození do 6 let, které:</p>
 
         <div class="icon-grid four-cols" role="list">
           <article class="icon-card" role="listitem">
             <img src="Ikonky/baby-teeth.svg" alt="Ikona péče o zuby" loading="lazy" width="56" height="56">
-            <p>chtějí předejít kazu a problémům se zuby</p>
+            <p>chtějí předejít zubnímu kazu a onemocnění dásní</p>
           </article>
           <article class="icon-card" role="listitem">
             <img src="Ikonky/toothache.svg" alt="Ikona bez bolesti" loading="lazy" width="56" height="56">
-            <p>nechtějí boj při čištění</p>
+            <p>chtějí vědět, jaké pomůcky pro své dítě vybrat</p>
           </article>
           <article class="icon-card" role="listitem">
             <img src="Ikonky/dental-care (1).svg" alt="Ikona správného postupu" loading="lazy" width="56" height="56">
-            <p>chtějí vědět, co opravdu funguje</p>
+            <p>nejsou si jisté, jaký význam má výživa dítěte</p>
           </article>
           <article class="icon-card" role="listitem">
             <img src="Ikonky/baby-teeth (1).svg" alt="Ikona jasného plánu" loading="lazy" width="56" height="56">
-            <p>chtějí mít jasno v&nbsp;tom, kdy začít a&nbsp;jak postupovat</p>
+            <p>chtějí budovat dítěti správné návyky do života</p>
           </article>
         </div>
 
@@ -188,25 +196,26 @@
           <h2>Co se během 30 minut naučíš</h2>
           <div class="bento-grid" role="list">
             <article class="bento-card" role="listitem"><span class="tick-badge" aria-hidden="true"><img
-                  src="Ikonky/baby-teeth (1).svg" alt="" loading="lazy" width="22" height="22"></span>kdy opravdu začít
-              s&nbsp;péčí o zuby</article>
+                  src="Ikonky/baby-teeth (1).svg" alt="" loading="lazy" width="22" height="22"></span>Kdy a jak začít
+              pečovat o zuby a dásně</article>
             <article class="bento-card" role="listitem"><span class="tick-badge" aria-hidden="true"><img
-                  src="Ikonky/baby-teeth (1).svg" alt="" loading="lazy" width="22" height="22"></span>jak správně čistit
-              malé dítě</article>
+                  src="Ikonky/baby-teeth (1).svg" alt="" loading="lazy" width="22" height="22"></span>Jaké pomůcky
+              vybrat</article>
             <article class="bento-card" role="listitem"><span class="tick-badge" aria-hidden="true"><img
-                  src="Ikonky/baby-teeth (1).svg" alt="" loading="lazy" width="22" height="22"></span>jak snížit riziko
-              kazu</article>
+                  src="Ikonky/baby-teeth (1).svg" alt="" loading="lazy" width="22" height="22"></span>Jakou techniku
+              čištění použít</article>
             <article class="bento-card" role="listitem"><span class="tick-badge" aria-hidden="true"><img
-                  src="Ikonky/baby-teeth (1).svg" alt="" loading="lazy" width="22" height="22"></span>jak si vytvořit
-              rutinu, která funguje doma</article>
+                  src="Ikonky/baby-teeth (1).svg" alt="" loading="lazy" width="22" height="22"></span>V jaké poloze
+              čistit zuby</article>
             <article class="bento-card" role="listitem"><span class="tick-badge" aria-hidden="true"><img
-                  src="Ikonky/baby-teeth (1).svg" alt="" loading="lazy" width="22" height="22"></span>jak si čištění
-              zubů zpříjemnit</article>
+                  src="Ikonky/baby-teeth (1).svg" alt="" loading="lazy" width="22" height="22"></span>Jaký vliv má
+              genetika</article>
             <article class="bento-card" role="listitem"><span class="tick-badge" aria-hidden="true"><img
-                  src="Ikonky/baby-teeth (1).svg" alt="" loading="lazy" width="22" height="22"></span>jaký vliv má
-              výživa a genetika</article>
+                  src="Ikonky/baby-teeth (1).svg" alt="" loading="lazy" width="22" height="22"></span>Jak si zpříjemnit
+              čištění a moje vychytávky</article>
           </div>
-          <p>Získáš jasný plán péče o zuby svého dítěte – bez chaosu a bez dohadů.</p>
+          <p>Získáš informace od dentální hygienistky s 11 letou praxí a dvojnásobné mámy, která pochopila, že realita
+            se dost liší od naučených věcí ze školy.</p>
           <a class="btn btn-primary" href="#pridej-se">Chci mít v péči o zuby jasno</a>
         </div>
         <figure class="learn-media">
@@ -245,11 +254,11 @@
       <div class="container lecturer-grid reveal">
         <div>
           <h2>Kdo tě webinářem provede</h2>
-          <p>Jsem dentální hygienistka a zároveň máma dvou dětí.<br>Denně vidím v ordinaci následky špatné nebo opožděné
-            péče o zuby u malých dětí.</p>
-          <p>Zároveň ale vím, jak vypadá realita doma s dítětem.<br>Proto předávám informace tak, aby byly srozumitelné,
-            proveditelné a fungovaly v běžném životě.</p>
-          <a class="btn btn-primary" href="#pridej-se">Chci vědět, jak na zuby svého dítěte</a>
+          <p>Jsem dentální hygienistka s 11 letou praxí, která vzdělává děti a rodiče i mimo ordinaci a zároveň máma dvou
+            malých dětí.</p>
+          <p>Denně vidím v ordinaci následky špatné nebo opožděné péče o zuby dětí.</p>
+          <p>Zároveň ale vím, jak vypadá realita doma s dítětem.</p>
+          <p>Proto předávám informace tak, aby byly srozumitelné, proveditelné a fungovaly v běžném životě.</p>
         </div>
         <figure class="lecturer-photo">
           <img src="Obrazky/Vendy.jpg" alt="Lektorka webináře Vendy" loading="lazy" width="800" height="1000">
@@ -263,7 +272,6 @@
         <div class="faq-grid">
           <div class="faq-intro">
             <h2>Časté otázky rodičů</h2>
-            <a class="btn btn-primary" href="#pridej-se">Chci vědět, jak na zuby svého dítěte</a>
           </div>
           <div class="faq-list">
             <details open>
@@ -293,7 +301,29 @@
         <p>Za cenu jednoho latte můžeš získat jistotu, která ovlivní zdraví zubů tvého dítěte na roky dopředu.</p>
         <a class="btn btn-primary" href="#simpleshop-form">Přihlas se na webinář a měj v péči o zuby jasno</a>
         <div id="simpleshop-form" class="simpleshop-box" aria-label="Místo pro SimpleShop formulář">
-          <p>Sem vložte prodejní SimpleShop formulář (embed kód).</p>
+          <!-- www.SimpleShop.cz form#143275 start -->
+          <div data-simpleshopform="JmG2x">
+            <div>Prodejní formulář je vytvořen v systému <a
+                href="https://www.simpleshop.cz/?utm_source=simpleshop&utm_medium=form&utm_campaign=82100"
+                target="_blank">SimpleShop.cz</a>.</div>
+          </div>
+          <script>
+            (function (i, s, o, g, r, a, m) {
+              i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments);
+              }, i[r].l = 1 * new Date();
+              a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+              a.async = 1;
+              a.src = g;
+              m.parentNode.insertBefore(a, m);
+            })(window, document, "script", "https://form.simpleshop.cz/prj/js/SimpleShopService.js", "sss");
+            sss("createForm", "JmG2x");
+          </script>
+          <div style="margin-top: 16px; text-align: center; display: none;">
+            <a style="display: inline-block; cursor: pointer; font-family: Arial, serif; font-size: 24px; font-weight: bold; padding: 10px 30px; text-decoration: none; background-color: rgb(116, 27, 71); border-radius: 6px; color: rgb(255, 255, 255);" href="https://form.simpleshop.cz/JmG2x/buy/">Chci vědět, jak na zuby svého dítěte</a>
+          </div>
+          <!-- www.SimpleShop.cz form#143275 end -->
         </div>
       </div>
     </section>
@@ -305,26 +335,11 @@
         <img src="logo v kolecku.png" alt="Logo v kolečku" loading="lazy" width="170" height="170">
       </section>
 
-      <section class="footer-contact">
-        <h2 class="footer-title">Zajímá vás téma dětských zubů? Nechte mi e-mail a pravidelně vám pošlu praktické tipy,
-          které fungují.</h2>
-        <form class="contact-form" action="#" method="post" novalidate>
-          <label for="email">E-mail rodiče</label>
-          <input id="email" name="email" type="email" autocomplete="email" required placeholder="napr. jana@email.cz">
-
-          <label class="hp-field" for="company">Společnost</label>
-          <input class="hp-field" id="company" name="company" type="text" tabindex="-1" autocomplete="off">
-
-          <button type="submit" class="btn btn-primary">Chci dostávat tipy</button>
-          <p class="form-note">Formulář je připravený pro Ecomail integraci.</p>
-        </form>
-      </section>
-
       <section class="footer-meta">
-        <p>Jméno: Doplňte jméno a příjmení</p>
-        <p>Sídlo: Doplňte sídlo podnikání</p>
-        <p>IČ: Doplňte IČ</p>
-        <p>Zápis v rejstříku: Doplňte údaj o zápisu</p>
+        <p>Ing. Bc. Vendula Tomanová</p>
+        <p>Hodonice 60, 391 65 Bechyně</p>
+        <p>IČ: 06960839</p>
+        <p>Zápis v rejstříku: Městský úřad Tábor</p>
       </section>
     </div>
     <div class="container footer-bottom">

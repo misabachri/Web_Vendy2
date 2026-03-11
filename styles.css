@@ -174,6 +174,39 @@ p {
   gap: var(--space-2);
 }
 
+.hero-event-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(280px, 1fr));
+  gap: var(--space-2);
+  margin-bottom: var(--space-2);
+  max-width: 640px;
+}
+
+.hero-event-item {
+  background: #fff;
+  border: 2px solid rgba(80, 52, 58, 0.2);
+  border-top: 4px solid #ffa5b7;
+  border-radius: var(--radius-md);
+  padding: 0.8rem 1rem 0.95rem;
+  box-shadow: var(--shadow-soft);
+}
+
+.hero-event-label {
+  font-family: "Coiny", cursive;
+  font-size: clamp(1.35rem, 4.2vw, 1.8rem);
+  line-height: 1;
+  letter-spacing: 0.03em;
+  color: var(--c-primary-dark);
+  margin: 0 0 0.45rem;
+}
+
+.hero-event-value {
+  font-size: 1.1rem;
+  font-weight: 800;
+  line-height: 1.3;
+  margin: 0;
+}
+
 .btn {
   display: inline-flex;
   align-items: center;
@@ -670,10 +703,10 @@ p {
 
 .simpleshop-box {
   margin-top: var(--space-3);
-  background: #ffffff;
+  background: var(--c-surface);
   border-radius: var(--radius-lg);
   padding: var(--space-3);
-  border: 2px dashed rgba(80, 52, 58, 0.25);
+  border: 1px solid rgba(80, 52, 58, 0.08);
   box-shadow: var(--shadow-soft);
 }
 
@@ -901,6 +934,20 @@ p {
 }
 
 @media (max-width: 900px) {
+  .hero-event-grid {
+    grid-template-columns: 1fr;
+    max-width: 100%;
+  }
+
+  #pro-koho>.container,
+  #jak-probiha>.container,
+  #o-lektorovi>.container,
+  #faq>.container,
+  #pridej-se>.container {
+    width: 100%;
+    padding-inline: var(--space-2);
+  }
+
   .join-wrap {
     width: 100%;
   }
@@ -930,14 +977,34 @@ p {
     justify-self: stretch;
   }
 
+  #jak-probiha .process-layout {
+    grid-template-columns: 1fr;
+  }
+
+  #jak-probiha .process-content {
+    order: 1;
+  }
+
+  #jak-probiha .process-media {
+    order: 2;
+  }
+
+  #faq .faq-intro h2 {
+    text-align: center;
+  }
+
+  #o-lektorovi .lecturer-grid > div {
+    text-align: center;
+  }
+
   .footer-contact,
   .footer-meta {
     grid-column: auto;
   }
 
   .footer-meta {
-    justify-self: start;
-    text-align: left;
+    justify-self: center;
+    text-align: center;
   }
 }
 
