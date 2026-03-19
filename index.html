@@ -23,7 +23,7 @@
   <meta name="twitter:image" content="https://www.zubybezkazu.cz/Obrazky/detskezuby9.jpg">
 
   <meta http-equiv="Content-Security-Policy"
-    content="default-src 'self'; img-src 'self' data: https://*.simpleshop.cz; script-src 'self' 'unsafe-inline' https://form.simpleshop.cz https://*.simpleshop.cz; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdn.jsdelivr.net https://form.simpleshop.cz https://*.simpleshop.cz; font-src 'self' https://fonts.gstatic.com; connect-src 'self' https://*.simpleshop.cz; frame-src 'self' https://*.simpleshop.cz https://www.youtube.com https://www.youtube-nocookie.com; base-uri 'self'; form-action 'self' https://*.simpleshop.cz; upgrade-insecure-requests">
+    content="default-src 'self'; img-src 'self' data: https://*.simpleshop.cz https://i.ytimg.com; script-src 'self' 'unsafe-inline' https://form.simpleshop.cz https://*.simpleshop.cz; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdn.jsdelivr.net https://form.simpleshop.cz https://*.simpleshop.cz; font-src 'self' https://fonts.gstatic.com https://cdn.jsdelivr.net; connect-src 'self' https://*.simpleshop.cz; frame-src 'self' https://*.simpleshop.cz https://www.youtube.com https://www.youtube-nocookie.com; base-uri 'self'; form-action 'self' https://*.simpleshop.cz; upgrade-insecure-requests">
   <meta http-equiv="X-Content-Type-Options" content="nosniff">
   <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
 
@@ -116,7 +116,7 @@
       <div class="hero-bg">
         <div class="container hero-grid">
           <div class="hero-copy reveal">
-            <p class="eyebrow">online webinář pro maminky</p>
+            <p class="eyebrow">webinář pro maminky</p>
             <h1>Zuby bez kazu začínají u mámy, která ví, jak na to</h1>
             <p>Možná si říkáš:</p>
             <p>„Snad to dělám dobře…“<br>„Nechci, aby moje dítě mělo kaz…“<br>„Ale nikdo mi pořádně neřekl, jak na
@@ -130,7 +130,7 @@
               </div>
               <div class="hero-event-item">
                 <p class="hero-event-label">KDE</p>
-                <p class="hero-event-value">online tady</p>
+                <p class="hero-event-value">živě na YouTube</p>
               </div>
             </div>
             <div class="cta-row">
@@ -150,10 +150,10 @@
     <section id="video" class="section video-section video-bridge">
       <div class="container narrow reveal">
         <div class="video-embed">
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/wEbOl8LYua0?si=X9Otu6Ha8YrHDNS3"
+          <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/wEbOl8LYua0?si=X90tu6Ha8YrHDNS3"
             title="YouTube video player" frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
         </div>
       </div>
     </section>
@@ -234,7 +234,7 @@
           <img src="Obrazky/detskezuby3.jpg" alt="Dítě při péči o zuby" loading="lazy" width="900" height="1200">
         </figure>
         <div class="process-content">
-          <h2>Jak webinář probíhá</h2>
+          <h2>Co teď udělat, abyste se na webinář dostali?</h2>
           <div class="timeline-scroll" id="timelineScroll">
             <div class="timeline-track" aria-hidden="true"></div>
             <div class="timeline-progress" id="timelineProgress" aria-hidden="true"></div>
@@ -245,8 +245,10 @@
               <li><span>4.</span> Během 30 minut získáš praktické rady, které můžeš začít používat hned</li>
             </ol>
           </div>
-          <p>Součástí webináře je i doporučení kartáčků a past vhodných pro malé děti.</p>
-          <a class="btn btn-primary" href="#pridej-se">Chci vědět, jak na zuby svého dítěte</a>
+          <div class="process-cta">
+            <p>Záznam bude! Shlédnout ho můžete týden po živém vysílání.</p>
+            <a class="btn btn-primary" href="#pridej-se">Chci vědět, jak na zuby svého dítěte</a>
+          </div>
         </div>
       </div>
     </section>
@@ -274,6 +276,8 @@
         <div class="faq-grid">
           <div class="faq-intro">
             <h2>Časté otázky rodičů</h2>
+            <p>Máš další otázku? Napiš mi ji níž do formuláře a během webináře ji ráda zodpovím.</p>
+            <a class="btn btn-primary" href="#simpleshop-form">Svůj dotaz pište tady</a>
           </div>
           <div class="faq-list">
             <details open>
@@ -291,6 +295,12 @@
                 silnější než péče?</summary>
               <p>Genetika hraje roli, ale správná péče může riziko kazu výrazně snížit.</p>
             </details>
+            <details>
+              <summary><img src="Ikonky/baby-teeth.svg" alt="" loading="lazy" width="24" height="24"> Jaký kartáček a
+                pasta jsou vhodné pro moje dítě?</summary>
+              <p>Na webináři vám ukážu různé pomůcky od dětských ručních kartáčků, po elektrické a mezizubní pomůcky.
+                Povíme si jaký vliv mají pasty a podle čeho je vybrat.</p>
+            </details>
           </div>
         </div>
       </div>
@@ -301,7 +311,6 @@
       <div class="container join-wrap reveal">
         <h2>Přidej se na webinář</h2>
         <p>Za cenu jednoho latte můžeš získat jistotu, která ovlivní zdraví zubů tvého dítěte na roky dopředu.</p>
-        <a class="btn btn-primary" href="#simpleshop-form">Přihlas se na webinář a měj v péči o zuby jasno</a>
         <div id="simpleshop-form" class="simpleshop-box" aria-label="Místo pro SimpleShop formulář">
           <!-- www.SimpleShop.cz form#143275 start -->
           <div data-simpleshopform="JmG2x">
@@ -322,9 +331,6 @@
             })(window, document, "script", "https://form.simpleshop.cz/prj/js/SimpleShopService.js", "sss");
             sss("createForm", "JmG2x");
           </script>
-          <div style="margin-top: 16px; text-align: center; display: none;">
-            <a style="display: inline-block; cursor: pointer; font-family: Arial, serif; font-size: 24px; font-weight: bold; padding: 10px 30px; text-decoration: none; background-color: rgb(116, 27, 71); border-radius: 6px; color: rgb(255, 255, 255);" href="https://form.simpleshop.cz/JmG2x/buy/">Chci vědět, jak na zuby svého dítěte</a>
-          </div>
           <!-- www.SimpleShop.cz form#143275 end -->
         </div>
       </div>
@@ -345,14 +351,18 @@
         <p>IČ: 06960839</p>
         <p>Zápis v rejstříku: Městský úřad Tábor</p>
       </section>
+
+      <section class="footer-legal-col">
+        <ul class="footer-legal">
+          <li><a href="Legislativa/Cookies.pdf" target="_blank" rel="noopener noreferrer">Zásady cookies</a></li>
+          <li><a href="Legislativa/GDPR.pdf" target="_blank" rel="noopener noreferrer">Ochrana osobních údajů (GDPR)</a></li>
+          <li><a href="Legislativa/Obchodni%20podminky.pdf" target="_blank" rel="noopener noreferrer">Obchodní podmínky</a></li>
+        </ul>
+      </section>
     </div>
     <div class="container footer-bottom">
-      <small>© 2026 Webinář péče o dětské zuby</small>
-      <ul class="footer-legal">
-        <li><a href="Legislativa/Obchodni%20podminky.pdf" target="_blank" rel="noopener noreferrer">Obchodní podmínky</a></li>
-        <li><a href="Legislativa/Cookies.pdf" target="_blank" rel="noopener noreferrer">Zásady cookies</a></li>
-        <li><a href="Legislativa/GDPR.pdf" target="_blank" rel="noopener noreferrer">Ochrana osobních údajů (GDPR)</a></li>
-      </ul>
+      <small>© 2026 Na zuby jsem pes</small>
+      <small>Web vytvořila <a href="https://michaelabachri.cz" target="_blank" rel="noopener noreferrer">michaelabachri.cz</a></small>
     </div>
   </footer>
 
