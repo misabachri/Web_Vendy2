@@ -23,11 +23,11 @@
   <meta name="twitter:image" content="https://www.zubybezkazu.cz/Obrazky/detskezuby9.jpg">
 
   <meta http-equiv="Content-Security-Policy"
-    content="default-src 'self'; img-src 'self' data: https://*.simpleshop.cz; script-src 'self' 'unsafe-inline' https://form.simpleshop.cz https://*.simpleshop.cz; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdn.jsdelivr.net https://form.simpleshop.cz https://*.simpleshop.cz; font-src 'self' https://fonts.gstatic.com; connect-src 'self' https://*.simpleshop.cz; frame-src 'self' https://*.simpleshop.cz; base-uri 'self'; form-action 'self' https://*.simpleshop.cz; upgrade-insecure-requests">
+    content="default-src 'self'; img-src 'self' data: https://*.simpleshop.cz; script-src 'self' 'unsafe-inline' https://form.simpleshop.cz https://*.simpleshop.cz; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdn.jsdelivr.net https://form.simpleshop.cz https://*.simpleshop.cz; font-src 'self' https://fonts.gstatic.com; connect-src 'self' https://*.simpleshop.cz; frame-src 'self' https://*.simpleshop.cz https://www.youtube.com https://www.youtube-nocookie.com; base-uri 'self'; form-action 'self' https://*.simpleshop.cz; upgrade-insecure-requests">
   <meta http-equiv="X-Content-Type-Options" content="nosniff">
   <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
 
-  <link rel="icon" type="image/png" href="/favicon.png">
+  <link rel="icon" type="image/png" href="favicon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Coiny&family=Nunito+Sans:wght@500;700;800&display=swap"
@@ -146,12 +146,14 @@
       </div>
     </section>
 
-    <!-- Video placeholder sekce -->
+    <!-- Video sekce -->
     <section id="video" class="section video-section video-bridge">
       <div class="container narrow reveal">
-        <div class="video-placeholder" role="img" aria-label="Místo pro video s představením webináře">
-          <i class="bi bi-play-circle"></i>
-          <p>Místo pro video s představením webináře</p>
+        <div class="video-embed">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/wEbOl8LYua0?si=X9Otu6Ha8YrHDNS3"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
       </div>
     </section>
@@ -332,7 +334,9 @@
   <footer id="paticka" class="site-footer">
     <div class="container footer-grid">
       <section class="footer-brand">
-        <img src="logo v kolecku.png" alt="Logo v kolečku" loading="lazy" width="170" height="170">
+        <a href="https://nazubyjsempes.cz/" target="_blank" rel="noopener noreferrer">
+          <img src="logo v kolecku.png" alt="Logo v kolečku" loading="lazy" width="170" height="170">
+        </a>
       </section>
 
       <section class="footer-meta">
@@ -345,9 +349,9 @@
     <div class="container footer-bottom">
       <small>© 2026 Webinář péče o dětské zuby</small>
       <ul class="footer-legal">
-        <li><a href="Legislativa/Obchodni%CC%81%20podmi%CC%81nky.pdf" target="_blank">Obchodní podmínky</a></li>
-        <li><a href="Legislativa/Cookies.pdf" target="_blank">Zásady cookies</a></li>
-        <li><a href="Legislativa/GDPR.pdf" target="_blank">Ochrana osobních údajů (GDPR)</a></li>
+        <li><a href="Legislativa/Obchodni%20podminky.pdf" target="_blank" rel="noopener noreferrer">Obchodní podmínky</a></li>
+        <li><a href="Legislativa/Cookies.pdf" target="_blank" rel="noopener noreferrer">Zásady cookies</a></li>
+        <li><a href="Legislativa/GDPR.pdf" target="_blank" rel="noopener noreferrer">Ochrana osobních údajů (GDPR)</a></li>
       </ul>
     </div>
   </footer>
