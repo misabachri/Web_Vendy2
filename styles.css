@@ -1115,6 +1115,10 @@ p {
 }
 
 @media (max-width: 900px) {
+  .hero-copy h1 {
+    font-size: clamp(2.35rem, 9.2vw, 3rem);
+  }
+
   h2 {
     font-size: clamp(1.9rem, 7.2vw, 2.45rem);
   }
