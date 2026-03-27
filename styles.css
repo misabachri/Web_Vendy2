@@ -1186,6 +1186,14 @@ p {
     text-align: center;
   }
 
+  #faq .faq-intro p,
+  #faq .faq-intro .btn {
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   #o-lektorovi .lecturer-grid > div {
     text-align: center;
   }
